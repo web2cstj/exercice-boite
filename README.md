@@ -1,14 +1,17 @@
 # Des boîtes en vrac
+## Objectif
+Explorer chaque propriété affectant la boîte individuellement avant de la mettre en contexte réel.
 
-## Objectifs
-- Explorer chaque propriété affectant la boîte individuellement avant de la mettre en contexte réel.
+## Le résultat final
+Ceci n'est qu'un exemple. Le résultat final __n__'a __pas__ besoin d'être identique à l'image suivante. Le but est d'explorer chaque propriété.
+![](resultat.png)
 
 ## Préparation
 1. Créer un fichier `index.html`
 1. Ajouter le squelette de la page avec `html:5`
 1. Lier la feuille de style `base.css`
 1. Lier la feuille de style `style.css`
-1. Ajouter le contenu de la page dans le `body` à l'aide de la commande _Emmet_ suivante(`copier-coller`⇒`CTRL-Espace`⇒`Enter`):
+1. Ajouter le contenu de la page dans le `body` à l'aide de la commande _Emmet_ suivante (`copier-coller`⇒`CTRL-Espace`⇒`Enter`):
     ```css
     div.interface>h1+div.groupe.flex>h2+p*26[tabindex=0][id][class]>lorem
     ```
