@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/* A 
+La largeur seulement 
+Exprimé en pixels
+petit ⇒ moyen ⇒ grand ⇒ très grand
+*/
+#A {
+  width: 200px;
+}
+
+#A:hover {
+  width: 400px;
+}
+
+#A:hover:focus {
+  width: 600px;
+}
+
+#A:focus {
+  width: 800px;
+}
+
+/* B 
+La hauteur seulement 
+Exprimé en em
+petit ⇒ moyen ⇒ grand ⇒ très grand
+*/
+#B {
+  height: 2em;
+}
+
+#B:hover {
+  height: 4em;
+}
+
+#B:hover:focus {
+  height: 6em;
+}
+
+#B:focus {
+  height: 8em;
+}
+
+/* C 
+Largeur et hauteur 
+petit ⇒ moyen ⇒ grand ⇒ taille de police doublée
+*/
+#C {
+  width: 200px;
+  height: 200px;
+}
+
+#C:hover {
+  width: 400px;
+  height: 100px;
+}
+
+#C:hover:focus {
+  width: 50px;
+  height: 400px;
+}
+
+#C:focus {
+  font-size: 2em;
+}
+
+/* D 
+Toutes les marges intérieures 
+petit ⇒ moyen ⇒ grand ⇒ très grand
+*/
+#D {
+  padding: 1em;
+}
+
+#D:hover {
+  padding: 2em;
+}
+
+#D:hover:focus {
+  padding: 3em;
+}
+
+#D:focus {
+  padding: 4em;
+}
+
+/* E 
+La marge intérieure de gauche 
+très grand ⇒ grand ⇒ moyen ⇒ petit
+*/
+#E {
+  padding-left: 4em;
+}
+
+#E:hover {
+  padding-left: 3em;
+}
+
+#E:hover:focus {
+  padding-left: 2em;
+}
+
+#E:focus {
+  padding-left: 1em;
+}
+
+/* F 
+Les marges intérieures avec 2 valeurs 
+très grand,petit ⇒ grand,moyen ⇒ moyen,grand ⇒ petit,très grand
+*/
+#F {
+  padding: 4em 1em;
+}
+
+#F:hover {
+  padding: 3em 2em;
+}
+
+#F:hover:focus {
+  padding: 2em 3em;
+}
+
+#F:focus {
+  padding: 1em 4em;
+}
+
+/* G 
+Toutes les marges extérieures
+petit ⇒ moyen ⇒ grand ⇒ très grand
+*/
+#G {
+  margin: 1em;
+}
+
+#G:hover {
+  margin: 2em;
+}
+
+#G:hover:focus {
+  margin: 3em;
+}
+
+#G:focus {
+  margin: 4em;
+}
+
+/* H 
+La marge extérieure du haut 
+très grand ⇒ grand ⇒ moyen ⇒ petit
+*/
+#H {
+  margin-top: 4em;
+}
+
+#H:hover {
+  margin-top: 3em;
+}
+
+#H:hover:focus {
+  margin-top: 2em;
+}
+
+#H:focus {
+  margin-top: 1em;
+}
+
+/* 
+I Les marges extérieures avec 2 valeurs 
+très grand,petit ⇒ grand,moyen ⇒ moyen,grand ⇒ petit,très grand
+*/
+#I {
+  margin: 4em 1em;
+}
+
+#I:hover {
+  margin: 3em 2em;
+}
+
+#I:hover:focus {
+  margin: 2em 3em;
+}
+
+#I:focus {
+  margin: 1em 4em;
+}
+
+/* J 
+Les marges intérieures avec 4 valeurs en rotation 
+*/
+#J {
+  margin: 1em 2em 3em 4em;
+}
+
+#J:hover {
+  margin: 2em 3em 4em 1em;
+}
+
+#J:hover:focus {
+  margin: 3em 4em 1em 2em;
+}
+
+#J:focus {
+  margin: 4em 1em 2em 3em;
+}
+
+/* K 
+Une couleur d'arrière-plan. 4 couleurs différentes 
+*/
+#K {
+  background-color: #00F;
+}
+
+#K:hover {
+  background-color: #FF0;
+}
+
+#K:hover:focus {
+  background-color: #F00;
+}
+
+#K:focus {
+  background-color: #0F0;
+}
+
+/* L 
+On joue avec la transparence de l'arrière-plan. 
+*/
+#L {
+  background-color: #F0F0;
+}
+
+#L:hover {
+  background-color: #F0FF;
+}
+
+#L:hover:focus {
+  background-color: #F0F9;
+}
+
+#L:focus {
+  background-color: #F0F3;
+}
+
+/* M 
+Des images d'arrière-plan 
+chat ⇒ chien ⇒ lapin ⇒ herisson
+(ajouter background-size: cover; et background-position: center; à l'état initial) 
+*/
+#M {
+  background-image: url(../img/chat.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#M:hover {
+  background-image: url(../img/chien.jpg);
+}
+
+#M:hover:focus {
+  background-image: url(../img/lapin.jpg);
+}
+
+#M:focus {
+  background-image: url(../img/herisson.jpg);
+}
+
+/* N 
+La position; 
+centre ⇒ En haut à gauche ⇒ En haut à droite ⇒ En bas à gauche 
+(ajouter background-image: url(../img/lapin.jpg); à l'état initial) 
+*/
+#N {
+  background-image: url(../img/lapin.jpg);
+  background-position: center;
+}
+
+#N:hover {
+  background-position: left top;
+}
+
+#N:hover:focus {
+  background-position: right top;
+}
+
+#N:focus {
+  background-position: left bottom;
+}
+
+/* O 
+La taille de l'arrière-plan;
+Donner 2 valeurs par état
+petit ⇒ moyen ⇒ grand ⇒ 100% 
+(ajouter background-image: url(../img/herisson.jpg); à l'état initial)
+*/
+#O {
+  background-image: url(../img/herisson.jpg);
+  background-size: 50px 50px;
+}
+
+#O:hover {
+  background-size: 100px 100px;
+}
+
+#O:hover:focus {
+  background-size: 500px 500px;
+}
+
+#O:focus {
+  background-size: 100% 100%;
+}
+
+/* P
+La couleur de la bordure;
+Choisir 4 couleurs (une par état)
+(ajouter border-style: solid; et border-width: 2em; à l'état initial)
+*/
+#P {
+  border-style: solid;
+  border-width: 2em;
+  border-color: red;
+}
+
+#P:hover {
+  border-color: green;
+}
+
+#P:hover:focus {
+  border-color: blue;
+}
+
+#P:focus {
+  border-color: yellow;
+}
+
+/* Q
+La taille de la bordure;
+petit ⇒ moyen ⇒ grand ⇒ très grand
+(ajouter border-style: solid; et border-color: red; à l'état initial)
+*/
+#Q {
+  border-style: solid;
+  border-width: 2em;
+  border-color: red;
+}
+
+#Q:hover {
+  border-width: 4em;
+}
+
+#Q:hover:focus {
+  border-width: 6em;
+}
+
+#Q:focus {
+  border-width: 8em;
+}
+
+/* R
+Le style de la bordure;
+solid ⇒ inset ⇒ outset ⇒ groove
+(ajouter border-width: 1em; et border-color: beige; à l'état initial)
+*/
+#R {
+  border-style: solid;
+  border-width: 1em;
+  border-color: beige;
+}
+
+#R:hover {
+  border-style: inset;
+}
+
+#R:hover:focus {
+  border-style: outset;
+}
+
+#R:focus {
+  border-style: groove;
+}
+
+/* S
+La bordure du HAUT;
+Choisir 4 états différents pour la bordure du haut
+Pour la couleur, prenez 4 couleurs différentes
+Pour le style, prendre solid pour tous les états
+Pour l'épaisseur, prendre la même valeur avec des unités différentes
+*/
+#S {
+  border-top: 3mm solid blue;
+}
+
+#S:hover {
+  border-top: 3in solid red;
+}
+
+#S:hover:focus {
+  border-top: 3vw solid peachpuff;
+}
+
+#S:focus {
+  border-top: 3vh solid floralwhite;
+}
+
+/* T
+La COULEUR de la bordure de GAUCHE;
+Prendre les même couleurs que l'état précédent;
+(ajouter border: 1in solid grey; à l'état initial)
+*/
+#T {
+  border: 1in solid grey;
+  border-left-color: blue;
+}
+
+#T:hover {
+  border-left-color: red;
+}
+
+#T:hover:focus {
+  border-left-color: peachpuff;
+}
+
+#T:focus {
+  border-left-color: floralwhite;
+}
+/*# sourceMappingURL=style.css.map */

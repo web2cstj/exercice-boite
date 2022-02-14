@@ -1,0 +1,91 @@
+/* BOILERPLATE CSS */
+html {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+}
+body {
+    min-height: 100%;
+    background-color: wheat;
+    //background-image: url(../img/neige.gif);
+}
+div.interface { /* Ou autre balise englobant la page */
+    min-height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; 
+}
+
+/* RÈGLES SPÉCIFIQUES À LA PAGE */
+body {
+    padding: 0 2em;
+}
+h1 {
+    font-family: impact;
+    font-weight: normal;
+    font-size: 6em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+div.groupe {
+    &.flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        text-align: center;
+    }
+    h2.fait {
+        display: none;
+    }
+    & > p {
+        background-color: #0001;
+        border: 1px solid #0003;
+        transition-duration: 2s;
+        transition-property: width, height, padding, margin, border, border-radius, background, background-image;
+        position: relative;
+        width: 300px;
+        &:focus {
+            outline: 2px dotted red;
+        }
+        &[id=""] {
+            // display: none;
+            opacity: .2;
+        }
+        &::after {
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            content: attr(id);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            min-width: 1.2em;
+            height: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: .6em;
+            font-weight: bold;
+            line-height: 1;
+            padding: 0 .2em;
+        }
+        &.fait {
+            display: none;
+        }
+    }
+    h2 {
+        background-color: #0003;
+        align-self: stretch;
+        padding: 1ch;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex: 0 1 0px;
+        text-align: center;
+    }
+}
